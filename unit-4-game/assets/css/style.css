@@ -1,0 +1,32 @@
+
+
+body {
+    background-color: lightgreen;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.gameTitle {
+    padding: 20px;
+    border: 3px black;
+    text-emphasis: bold;
+}
+
+.rN {
+    padding: 30px;
+    background-color: blueviolet;
+    max-width: 200px;
+}
+
+.userScore {
+    padding: 30px;
+    background-color: lightcoral;
+    max-width: 200px;
+}
+
+.crystalButtons {
+    height: 100px;
+    width: 100px;
+}
+
+

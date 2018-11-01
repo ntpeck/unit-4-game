@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!-- reset -->
+<link rel="stylesheet" type="text/css"href=".\assets\css\reset.css">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<!-- css -->
+<link rel="stylesheet" type="text/css"href=".\assets\css\style.css">
+
+</head>
+
+<body>
+
+    <!-- Heading: name of the game -->
+    <header class = "gameTitle">Crystals Collector</header>
+
+    <!-- display instructions -->
+    <div>
+       You will be given a rondom number at the start of the game. 
+       <br>
+       There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+       <br>
+       You win the game by matching your total score to the random number. You lose the game if you go above the random number.
+       <br>
+       The value of the crystal is hidden until you click on it. 
+       <br>
+       Each time the game starts, the values of each crystal will change.
+    </div>
+
+    <!-- display random number -->
+    <div class = "rN">
+        Random Number
+    </div>
+
+    <!-- display wins and losses -->
+    <div class = wL>
+        <div class = "wins"></div>
+        <div class = "losses"></div>
+    </div>
+
+    <!-- crystal buttons -->
+    <div class = "buttons">
+        <!-- <img class = "button" id = "bOne" src="assets\images\crystalone.jpg" height = "100px" width = "100px">
+        <img class = "button" id = "bTwo" src="assets\images\crystaltwo.jpg" height = "100px" width = "100px">
+        <img class = "button" id = "bThree" src="assets\images\crystalthree.jpg" height = "100px" width = "100px">
+        <img class = "button" id = "bFour" src="assets\images\crystalfour.jpg" height = "100px" width = "100px"> -->
+    </div>
+
+    <!-- display total score -->
+    <div class = "userScore">
+        <div>Your total score is: </div>
+        <div class = "uS"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- js -->
+<script type="text/javascript" src=".\assets\javascript\game.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
