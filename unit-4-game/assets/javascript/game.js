@@ -10,7 +10,7 @@ startGame();
 function startGame(){
     // new random number. 
     randomNumber = getRandomNumber(19, 120);
-    $(".rN").text(randomNumber);
+    $(".rN").text("Random Number: "+randomNumber);
     // user's score will reset to zero.
     $(".wins").text("Wins: "+wins);
     $(".losses").text("Losses: "+losses);

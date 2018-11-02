@@ -12,8 +12,14 @@ body {
     font: black;
 }
 
+.abc {
+    padding: 10px;
+    background-color: blueviolet;
+    max-width: 500px;
+}
+
 .rN {
-    padding: 30px;
+    padding: 10px;
     background-color: blueviolet;
     max-width: 500px;
 }
@@ -46,4 +52,6 @@ body {
     background-color: rgb(165, 226, 66);
     max-width: 500px;
 }
+
+
 
