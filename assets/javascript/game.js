@@ -2,7 +2,7 @@ var wins = 0;
 var losses = 0;
 var randomNumber;
 var userScore;
-var crystalImages = ["..\images\crystalone.jpg","..\images\crystaltwo.jpg","..\images\crystalthree.jpg","..\images\crystalfour.jpg"];
+
 
 startGame();
 
@@ -12,6 +12,8 @@ function startGame(){
     randomNumber = getRandomNumber(19, 120);
     $(".rN").text(randomNumber);
     // user's score will reset to zero.
+    $(".wins").text("Wins: "+wins);
+    $(".losses").text("Losses: "+losses);
     userScore = 0;
     $(".uS").text(userScore);
 
@@ -37,31 +39,36 @@ function startGame(){
         .attr("data-value", crystals[i].value)
         $(".buttons").append(newCrystal)
     }
+    play();
 }
 
 function getRandomNumber(min, max){
     return Math.floor(Math.random() * Math.floor(max));
 }
 
+function play() {
 // jQuery click event
-$(".buttons").click(function(){
+$(".crystalButtons").click(function(){
     //  add crystal points to user score. 
-    userScore = (crystals[i].value + userScore);
+    userScore = (parseInt($(this).attr('data-value')) + userScore);
     $(".uS").text(userScore);
     //  update score counter.
-    
 
-    if (userScore = randomNumber) {
+    if (userScore == randomNumber) {
         alert("Player Wins!");
         wins++;
+        $(".buttons").empty();
         startGame();
+        
     }
     else if (userScore > randomNumber) {
         alert("Player Loses!");
         losses++;
+        $(".buttons").empty();
         startGame();
     }
-        
+    console.log(userScore)   
   });
+};
 
-
+//   $("div").empty();
